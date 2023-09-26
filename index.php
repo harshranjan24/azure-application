@@ -83,7 +83,7 @@ switch($va){
               <h6 class="font-weight-light"><br>Sign in to continue.</h6>
               <?php if(isset($message)){?><div align="center" class="error-text"><?php echo $message;?></div><?php }?>
 
-              <form class="pt-3" name="loginform" method='post' action="authenticate" method=post onSubmit="return fnLoginValidate()">
+              <form class="pt-3" name="loginform" method='post' action="authenticate.php" method=post onSubmit="return fnLoginValidate()">
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" id="username" name="username" placeholder="Username">
                 </div>

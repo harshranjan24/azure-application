@@ -7,16 +7,18 @@ if($type=="remote")
 	$server="mysql-deltawork.mysql.database.azure.com";
 	$db="azuredb";
 	$username="harsh";
-	$password="H@r$HR2/\/J@N";
+	$password="Test@123456789";
 	  
 }
-$con=mysqli_connect($server, $username, "", $db);
-/*if(mysqli_connect_error())
+
+$con=mysqli_connect($server, $username, $password, $db);
+/*
+if(mysqli_connect_error())
 echo "Connection Error.";
 else
-echo "Database Connection Successfully.";*/
+echo "Database Connection Successfully.";exit;*/
 
-$pdo_conn = new PDO("mysql:host=$server;dbname=$db",$username,$password);
+//$pdo_conn = new PDO("mysql:host=$server;dbname=$db",$username,$password);
 
 function validSessionCheck ()
 {
